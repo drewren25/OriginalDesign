@@ -1,10 +1,23 @@
+
 void setup()
 {
-  size(100,100);
+  size(400,300);
 }
-void draw()
-{
-  ellipse(50,50,50,50);
+int x = 0;
+void draw(){
+  fill(x);
+ background(0);
+triangle(200, 60, 130, 180, 270, 180);
+ellipse(200, 140, 80, 80);
+line(200, 60, 200, 180);
+
+}
+void mousePressed(){
+  if(x == 0){
+    x = 225;
+  } else{
+    x = 0;
+  }
 }
 
 
